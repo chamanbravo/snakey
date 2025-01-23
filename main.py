@@ -151,8 +151,8 @@ class Game:
             self.update_score()
 
     def spawn_apple(self):
-        x = randint(1, 40)
-        y = randint(1, 40)
+        x = randint(2, self.height - 3)
+        y = randint(2, self.height - 3)
         self.apple.position = Point(x, y)
 
         print(f"\033[{x+1};{y+1}H", end="")
